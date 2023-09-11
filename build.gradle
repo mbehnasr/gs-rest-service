@@ -27,8 +27,3 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-sonar {
-  properties {
-    property "sonar.projectKey", "test3"
-  }
-}
