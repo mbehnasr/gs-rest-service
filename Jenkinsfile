@@ -10,7 +10,8 @@ pipeline {
 */
  		 stage('SonarQube Analysis') {
 			steps {
-      				sh './gradlew sonar   -Dsonar.projectKey=fuck   -Dsonar.host.url=http://172.17.0.3:9000   -Dsonar.login=sqp_b62bf4ad54646c2102cbf267d526d853bc875b35'
+
+      				sh './gradlew sonar   -Dsonar.projectKey=sast   -Dsonar.host.url=http://172.17.0.3:9000   -Dsonar.login=sqp_91112e985bfdbef2251beeb00831a00c82c3f0a4'
   		}
 	}
 }
