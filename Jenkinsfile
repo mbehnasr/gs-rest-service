@@ -4,13 +4,13 @@ pipeline {
  
   		stage('SCM') {
 			steps {
-    				checkout scm
+    				sh 'checkout scm'
   		}
 }
  		 stage('SonarQube Analysis') {
 			steps {
   	  			withSonarQubeEnv() {
-      				sh "./gradlew sonar"
+      				sh './gradlew sonar'
     			}
   		}
 	}
